@@ -154,7 +154,7 @@ export class App {
       }
 
       setTimeout(this.grid.drawGrid(), 0);
-    }, 100);
+    }, 333);
   }
 
   public buttonClick = (button: string) => this.input.buttonInput(button);

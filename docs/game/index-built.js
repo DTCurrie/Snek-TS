@@ -2746,7 +2746,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                                 return;
                             }
                             setTimeout(_this11.grid.drawGrid(), 0);
-                        }, 100);
+                        }, 333);
                     }
                 }]);
 

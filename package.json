@@ -3,19 +3,19 @@
   "version": "1.0.0",
   "description": "The classic Snake game. Built using Typescript and HTML5 Canvas.",
   "scripts": {
-    "build": "npm run ts && npm run js && npm run sass && npm run html && npm run image",
-    "start": "npm run sass && concurrently -k -p \"[{name}]\" -n \"SERVER,TS,JS,SASS,HTML,IMG\" -c \"black.bold,blue.bold,green.bold,red.bold,yellow.bold,cyan.bold\" \"http-server ./dist\" \"npm run ts:watch\" \"npm run js:watch\" \"npm run sass:watch\" \"npm run html:watch\" \"npm run image:watch\"",
+    "build": "npm run ts && npm run js && npm run sass && npm run static && npm run image",
+    "start": "npm run sass && concurrently -k -p \"[{name}]\" -n \"SERVER,TS,JS,SASS,STATIC,IMG\" -c \"black.bold,blue.bold,green.bold,red.bold,yellow.bold,cyan.bold\" \"http-server ./dist\" \"npm run ts:watch\" \"npm run js:watch\" \"npm run sass:watch\" \"npm run static:watch\" \"npm run image:watch\"",
     "docs": "npm run build && typedoc --out docs/ --mode file --module system --target es6 --exclude \"src/**/*/index.ts\" --readme ./README.md src/ && cp ./.nojekyll docs/ && cp -r dist/ docs/game",
-    "ts": "tsc && node scripts/build.js && browserify tmp/index-built.js -o tmp/index-built.js && babel tmp/index-built.js --out-file dist/index-built.js",
+    "ts": "tsc && node scripts/build-app.js && browserify tmp/index-built.js -o tmp/index-built.js && babel tmp/index-built.js --out-file dist/index-built.js",
     "ts:watch": "npm-watch ts",
-    "js": "browserify src/bundle.js -o tmp/bundle.js && babel tmp/bundle.js --out-file dist/bundle.js",
+    "js": "browserify src/js/bundle.js -o tmp/bundle.js && babel tmp/bundle.js --out-file dist/bundle.js",
     "js:watch": "npm-watch js",
     "babel": "",
     "sass": "node-sass -r -o dist --include-path node_modules src/styles && npm run css",
     "sass:watch": "npm-watch sass",
     "css": "postcss dist/styles.css -u autoprefixer -r",
-    "html": "node ./scripts/compile-html.js",
-    "html:watch": "npm-watch html",
+    "static": "cp -r src/static/ dist/",
+    "static:watch": "npm-watch static",
     "image": "node ./scripts/optimize-images.js",
     "image:watch": "npm-watch image"
   },
@@ -62,11 +62,10 @@
       "extensions": "scss,sass",
       "quiet": "false"
     },
-    "html": {
+    "static": {
       "patterns": [
-        "src/**/*"
+        "src/static/**/*"
       ],
-      "extensions": "html",
       "quiet": "false"
     },
     "image": {

@@ -399,7 +399,7 @@ define("app", ["require", "exports", "entity/index", "emitters", "grid/index", "
                     return;
                 }
                 setTimeout(this.grid.drawGrid(), 0);
-            }, 100);
+            }, 333);
         }
     }
     exports.App = App;
