@@ -32,6 +32,7 @@ export class App {
   constructor() {
     nativeWindow().App = this;
     this.initialize();
+    setTimeout(() => document.querySelector('main[role="main"]').classList.remove('hidden'), 0);
   }
 
   private startGame(): void {
@@ -79,6 +80,12 @@ export class App {
     this.input = new InputService();
     this.nextCoordinates = new GridCoordinates();
     this.moveCoordinates = this.nextCoordinates;
+
+    document.getElementById('up').addEventListener('click', () => this.buttonClick('up'));
+    document.getElementById('down').addEventListener('click', () => this.buttonClick('down'));
+    document.getElementById('left').addEventListener('click', () => this.buttonClick('left'));
+    document.getElementById('right').addEventListener('click', () => this.buttonClick('right'));
+    document.getElementById('space').addEventListener('click', () => this.buttonClick('space'));
 
     this.canvas = <HTMLCanvasElement>document.getElementById('canvas');
     this.ctx = this.canvas.getContext('2d');
@@ -157,4 +164,6 @@ export class App {
       setTimeout(this.grid.drawGrid(), 0);
     }, 100);
   }
+
+  public buttonClick = (button: string) => this.input.buttonInput(button);
 }

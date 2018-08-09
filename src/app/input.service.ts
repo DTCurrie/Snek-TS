@@ -21,4 +21,18 @@ export class InputService {
       this.onSpace.emit();
     }
   }
+
+  public buttonInput(input: string) {
+    if (input === 'up') {
+      this.onMove.emit(new GridCoordinates(0, -1));
+    } else if (input === "down") {
+      this.onMove.emit(new GridCoordinates(0, 1));
+    } else if (input === "left") {
+      this.onMove.emit(new GridCoordinates(-1, 0));
+    } else if (input === "right") {
+      this.onMove.emit(new GridCoordinates(1, 0));
+    } else if (input === "space") {
+      this.onSpace.emit();
+    }
+  }
 }

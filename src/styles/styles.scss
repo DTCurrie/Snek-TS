@@ -31,6 +31,10 @@ html {
       position: relative;
       display: table;
 
+      &.hidden {
+        display: none;
+      }
+
       #bg {
         position: relative;
         display: block;
@@ -51,6 +55,48 @@ html {
             position: relative;
             display: block;
             border: 2px solid black;
+          }
+        }
+
+        #controls {
+          position: relative;
+          display: block;
+          width: 240px;
+          height: 200px;
+          top: 335px;
+          padding-left: 1px;
+          margin: 0 auto;
+
+          #up {
+            top: 0;
+            left: 82px;
+          }
+
+          #down {
+            bottom: 50px;
+            left: 82px;
+          }
+
+          #left {
+            top: 38px;
+            left: 0;
+          }
+
+          #right {
+            top: 38px;
+            right: 0;
+          }
+
+          #space {
+            bottom: 0;
+            left: 82px;
+          }
+
+          .control {
+            position: absolute;
+            display: block;
+            width: 76px;
+            height: 48px;
           }
         }
       }
