@@ -6,7 +6,7 @@
   "scripts": {
     "build": "npm run ts && npm run js && npm run babel && npm run sass && npm run css && npm run html && npm run image",
     "start": "npm run sass && concurrently -k -p \"[{name}]\" -n \"SERVER,TS,JS,SASS,HTML,IMG\" -c \"black.bold,blue.bold,green.bold,red.bold,yellow.bold,cyan.bold\" \"http-server ./dist\" \"npm run ts:watch\" \"npm run js:watch\" \"npm run sass:watch\" \"npm run html:watch\" \"npm run image:watch\"",
-    "docs": "typedoc --out docs/ --mode modules --module system --target es6 --readme ./README.md src/ && cp ./_config.yml docs/",
+    "docs": "typedoc --out docs/ --mode modules --module system --target es6 --readme ./README.md src/ && cp ./_config.yml docs/ && cp ./.nojekyll docs/",
     "ts": "tsc",
     "ts:watch": "npm-watch ts",
     "js": "browserify src/index.js -o dist/index.js && npm run babel",
