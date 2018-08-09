@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Disposable | snek-ts</title>
+	<title>Entity | snek-ts</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_emitters_.html">&quot;emitters&quot;</a>
-				</li>
-				<li>
-					<a href="_emitters_.disposable.html">Disposable</a>
+					<a href="entity.html">Entity</a>
 				</li>
 			</ul>
-			<h1>Interface Disposable</h1>
+			<h1>Interface Entity</h1>
 		</div>
 	</div>
 </header>
@@ -73,8 +70,16 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Disposable</span>
+						<span class="target">Entity</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implemented by</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../classes/food.html" class="tsd-signature-type">Food</a></li>
+					<li><a href="../classes/player.html" class="tsd-signature-type">Player</a></li>
+					<li><a href="../classes/segment.html" class="tsd-signature-type">Segment</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -82,32 +87,47 @@
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
 						<section class="tsd-index-section ">
-							<h3>Methods</h3>
+							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-interface"><a href="_emitters_.disposable.html#dispose" class="tsd-kind-icon">dispose</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="entity.html#color" class="tsd-kind-icon">color</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="entity.html#coordinates" class="tsd-kind-icon">coordinates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-interface"><a href="entity.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-interface">
-					<a name="dispose" class="tsd-anchor"></a>
-					<h3>dispose</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-interface">
-						<li class="tsd-signature tsd-kind-icon">dispose<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/8afee58/src/app/emitters.ts#L4">emitters.ts:4</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
+				<h2>Properties</h2>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="color" class="tsd-anchor"></a>
+					<h3>color</h3>
+					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/entity/entity.interface.ts#L7">entity/entity.interface.ts:7</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="coordinates" class="tsd-anchor"></a>
+					<h3>coordinates</h3>
+					<div class="tsd-signature tsd-kind-icon">coordinates<span class="tsd-signature-symbol">:</span> <a href="../classes/gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/entity/entity.interface.ts#L8">entity/entity.interface.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/entitytype.html" class="tsd-signature-type">EntityType</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/entity/entity.interface.ts#L6">entity/entity.interface.ts:6</a></li>
+						</ul>
+					</aside>
 				</section>
 			</section>
 		</div>
@@ -117,84 +137,72 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="label tsd-is-external">
-						<span>Internals</span>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_app_.html">"app"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_bootstrap_.html">"bootstrap"</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_emitters_.html">"emitters"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_entity_type_enum_.html">"entity/entity-<wbr>type.enum"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_entity_interface_.html">"entity/entity.interface"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_food_.html">"entity/food"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_player_.html">"entity/player"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_segment_.html">"entity/segment"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_grid_grid_.html">"grid/grid"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_grid_grid_coordinates_.html">"grid/grid-<wbr>coordinates"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_grid_grid_tile_.html">"grid/grid-<wbr>tile"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_input_service_.html">"input.service"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_window_.html">"window"</a>
-					</li>
-					<li class="label tsd-is-external">
-						<span>Externals</span>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/_entity_index_.html">"entity/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/_grid_index_.html">"grid/index"</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
-					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_emitters_.emitter.html" class="tsd-kind-icon">Emitter</a>
+					<li class=" tsd-kind-enum">
+						<a href="../enums/entitytype.html" class="tsd-kind-icon">Entity<wbr>Type</a>
 					</li>
-					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../classes/_emitters_.typedemitter.html" class="tsd-kind-icon">Typed<wbr>Emitter</a>
+					<li class=" tsd-kind-class">
+						<a href="../classes/app.html" class="tsd-kind-icon">App</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/emitter.html" class="tsd-kind-icon">Emitter</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/food.html" class="tsd-kind-icon">Food</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/grid.html" class="tsd-kind-icon">Grid</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/gridcoordinates.html" class="tsd-kind-icon">Grid<wbr>Coordinates</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/gridtile.html" class="tsd-kind-icon">Grid<wbr>Tile</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/inputservice.html" class="tsd-kind-icon">Input<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/player.html" class="tsd-kind-icon">Player</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="../classes/segment.html" class="tsd-kind-icon">Segment</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="../classes/typedemitter.html" class="tsd-kind-icon">Typed<wbr>Emitter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="disposable.html" class="tsd-kind-icon">Disposable</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_emitters_.disposable.html" class="tsd-kind-icon">Disposable</a>
+					<li class="current tsd-kind-interface">
+						<a href="entity.html" class="tsd-kind-icon">Entity</a>
 						<ul>
-							<li class=" tsd-kind-method tsd-parent-kind-interface">
-								<a href="_emitters_.disposable.html#dispose" class="tsd-kind-icon">dispose</a>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="entity.html#color" class="tsd-kind-icon">color</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="entity.html#coordinates" class="tsd-kind-icon">coordinates</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-interface">
+								<a href="entity.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_emitters_.listener.html" class="tsd-kind-icon">Listener</a>
+					<li class=" tsd-kind-interface">
+						<a href="listener.html" class="tsd-kind-icon">Listener</a>
 					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_emitters_.typedlistener.html" class="tsd-kind-icon">Typed<wbr>Listener</a>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="typedlistener.html" class="tsd-kind-icon">Typed<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#nativewindow" class="tsd-kind-icon">native<wbr>Window</a>
 					</li>
 				</ul>
 			</nav>

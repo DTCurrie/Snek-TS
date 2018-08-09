@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Window | snek-ts</title>
+	<title>Segment | snek-ts</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,16 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_window_.html">&quot;window&quot;</a>
-				</li>
-				<li>
-					<a href="../modules/_window_.__global.html">__global</a>
-				</li>
-				<li>
-					<a href="_window_.__global.window.html">Window</a>
+					<a href="segment.html">Segment</a>
 				</li>
 			</ul>
-			<h1>Interface Window</h1>
+			<h1>Class Segment</h1>
 		</div>
 	</div>
 </header>
@@ -76,32 +70,95 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Window</span>
+						<span class="target">Segment</span>
 					</li>
+				</ul>
+			</section>
+			<section class="tsd-panel">
+				<h3>Implements</h3>
+				<ul class="tsd-hierarchy">
+					<li><a href="../interfaces/entity.html" class="tsd-signature-type">Entity</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
 					<div class="tsd-index-content">
-						<section class="tsd-index-section tsd-is-not-exported">
+						<section class="tsd-index-section ">
+							<h3>Constructors</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="segment.html#constructor" class="tsd-kind-icon">constructor</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported"><a href="_window_.__global.window.html#app" class="tsd-kind-icon">App</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="segment.html#color" class="tsd-kind-icon">color</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="segment.html#coordinates" class="tsd-kind-icon">coordinates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="segment.html#type" class="tsd-kind-icon">type</a></li>
 							</ul>
 						</section>
 					</div>
 				</section>
 			</section>
-			<section class="tsd-panel-group tsd-member-group tsd-is-not-exported">
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Constructors</h2>
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+					<a name="constructor" class="tsd-anchor"></a>
+					<h3>constructor</h3>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Segment<span class="tsd-signature-symbol">(</span>coordinates<span class="tsd-signature-symbol">?: </span><a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="segment.html" class="tsd-signature-type">Segment</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/entity/segment.ts#L8">entity/segment.ts:8</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> coordinates: <a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a><span class="tsd-signature-symbol"> =&nbsp;new GridCoordinates()</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="segment.html" class="tsd-signature-type">Segment</a></h4>
+						</li>
+					</ul>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-					<a name="app" class="tsd-anchor"></a>
-					<h3>App</h3>
-					<div class="tsd-signature tsd-kind-icon">App<span class="tsd-signature-symbol">:</span> <a href="../classes/_app_.app.html" class="tsd-signature-type">App</a></div>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="color" class="tsd-anchor"></a>
+					<h3>color</h3>
+					<div class="tsd-signature tsd-kind-icon">color<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> =&nbsp;&quot;#666666&quot;</span></div>
 					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/entity.html">Entity</a>.<a href="../interfaces/entity.html#color">color</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/8afee58/src/app/window.ts#L4">window.ts:4</a></li>
+							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/entity/segment.ts#L8">entity/segment.ts:8</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="coordinates" class="tsd-anchor"></a>
+					<h3>coordinates</h3>
+					<div class="tsd-signature tsd-kind-icon">coordinates<span class="tsd-signature-symbol">:</span> <a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/entity.html">Entity</a>.<a href="../interfaces/entity.html#coordinates">coordinates</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/entity/segment.ts#L10">entity/segment.ts:10</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="type" class="tsd-anchor"></a>
+					<h3>type</h3>
+					<div class="tsd-signature tsd-kind-icon">type<span class="tsd-signature-symbol">:</span> <a href="../enums/entitytype.html" class="tsd-signature-type">EntityType</a><span class="tsd-signature-symbol"> =&nbsp;EntityType.Segment</span></div>
+					<aside class="tsd-sources">
+						<p>Implementation of <a href="../interfaces/entity.html">Entity</a>.<a href="../interfaces/entity.html#type">type</a></p>
+						<ul>
+							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/entity/segment.ts#L7">entity/segment.ts:7</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -113,78 +170,76 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="label tsd-is-external">
-						<span>Internals</span>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_app_.html">"app"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_bootstrap_.html">"bootstrap"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_emitters_.html">"emitters"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_entity_type_enum_.html">"entity/entity-<wbr>type.enum"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_entity_interface_.html">"entity/entity.interface"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_food_.html">"entity/food"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_player_.html">"entity/player"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_segment_.html">"entity/segment"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_grid_grid_.html">"grid/grid"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_grid_grid_coordinates_.html">"grid/grid-<wbr>coordinates"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_grid_grid_tile_.html">"grid/grid-<wbr>tile"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_input_service_.html">"input.service"</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_window_.html">"window"</a>
-						<ul>
-							<li class="current tsd-kind-module tsd-parent-kind-external-module tsd-is-not-exported">
-								<a href="../modules/_window_.__global.html">__global</a>
-							</li>
-						</ul>
-					</li>
-					<li class="label tsd-is-external">
-						<span>Externals</span>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/_entity_index_.html">"entity/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/_grid_index_.html">"grid/index"</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/entitytype.html" class="tsd-kind-icon">Entity<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="app.html" class="tsd-kind-icon">App</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="emitter.html" class="tsd-kind-icon">Emitter</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="food.html" class="tsd-kind-icon">Food</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="grid.html" class="tsd-kind-icon">Grid</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="gridcoordinates.html" class="tsd-kind-icon">Grid<wbr>Coordinates</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="gridtile.html" class="tsd-kind-icon">Grid<wbr>Tile</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="inputservice.html" class="tsd-kind-icon">Input<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="player.html" class="tsd-kind-icon">Player</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported">
-						<a href="_window_.__global.window.html" class="tsd-kind-icon">Window</a>
+					<li class="current tsd-kind-class">
+						<a href="segment.html" class="tsd-kind-icon">Segment</a>
 						<ul>
-							<li class=" tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported">
-								<a href="_window_.__global.window.html#app" class="tsd-kind-icon">App</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="segment.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="segment.html#color" class="tsd-kind-icon">color</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="segment.html#coordinates" class="tsd-kind-icon">coordinates</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="segment.html#type" class="tsd-kind-icon">type</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="typedemitter.html" class="tsd-kind-icon">Typed<wbr>Emitter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/disposable.html" class="tsd-kind-icon">Disposable</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/entity.html" class="tsd-kind-icon">Entity</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="../interfaces/typedlistener.html" class="tsd-kind-icon">Typed<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#nativewindow" class="tsd-kind-icon">native<wbr>Window</a>
+					</li>
 				</ul>
 			</nav>
 		</div>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>GridTile | snek-ts</title>
+	<title>GridCoordinates | snek-ts</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_grid_grid_tile_.html">&quot;grid/grid-tile&quot;</a>
-				</li>
-				<li>
-					<a href="_grid_grid_tile_.gridtile.html">GridTile</a>
+					<a href="gridcoordinates.html">GridCoordinates</a>
 				</li>
 			</ul>
-			<h1>Class GridTile</h1>
+			<h1>Class GridCoordinates</h1>
 		</div>
 	</div>
 </header>
@@ -73,7 +70,7 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">GridTile</span>
+						<span class="target">GridCoordinates</span>
 					</li>
 				</ul>
 			</section>
@@ -84,14 +81,21 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="_grid_grid_tile_.gridtile.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="gridcoordinates.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_grid_grid_tile_.gridtile.html#content" class="tsd-kind-icon">content</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="_grid_grid_tile_.gridtile.html#coordinates" class="tsd-kind-icon">coordinates</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="gridcoordinates.html#x" class="tsd-kind-icon">x</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="gridcoordinates.html#y" class="tsd-kind-icon">y</a></li>
+							</ul>
+						</section>
+						<section class="tsd-index-section ">
+							<h3>Methods</h3>
+							<ul class="tsd-index-list">
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gridcoordinates.html#add" class="tsd-kind-icon">Add</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="gridcoordinates.html#equals" class="tsd-kind-icon">Equals</a></li>
 							</ul>
 						</section>
 					</div>
@@ -103,25 +107,25 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Grid<wbr>Tile<span class="tsd-signature-symbol">(</span>coordinates<span class="tsd-signature-symbol">: </span><a href="_grid_grid_coordinates_.gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a>, content<span class="tsd-signature-symbol">?: </span><a href="../interfaces/_entity_entity_interface_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="_grid_grid_tile_.gridtile.html" class="tsd-signature-type">GridTile</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Grid<wbr>Coordinates<span class="tsd-signature-symbol">(</span>x<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span>, y<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/8afee58/src/app/grid/grid-tile.ts#L5">grid/grid-tile.ts:5</a></li>
+									<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/grid/grid-coordinates.ts#L1">grid/grid-coordinates.ts:1</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>coordinates: <a href="_grid_grid_coordinates_.gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> x: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 								</li>
 								<li>
-									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> content: <a href="../interfaces/_entity_entity_interface_.entity.html" class="tsd-signature-type">Entity</a><span class="tsd-signature-symbol"> =&nbsp;null</span></h5>
+									<h5><span class="tsd-flag ts-flagDefault value">Default value</span> y: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> =&nbsp;0</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="_grid_grid_tile_.gridtile.html" class="tsd-signature-type">GridTile</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -129,24 +133,73 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="content" class="tsd-anchor"></a>
-					<h3>content</h3>
-					<div class="tsd-signature tsd-kind-icon">content<span class="tsd-signature-symbol">:</span> <a href="../interfaces/_entity_entity_interface_.entity.html" class="tsd-signature-type">Entity</a></div>
+					<a name="x" class="tsd-anchor"></a>
+					<h3>x</h3>
+					<div class="tsd-signature tsd-kind-icon">x<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/8afee58/src/app/grid/grid-tile.ts#L6">grid/grid-tile.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/grid/grid-coordinates.ts#L2">grid/grid-coordinates.ts:2</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="coordinates" class="tsd-anchor"></a>
-					<h3>coordinates</h3>
-					<div class="tsd-signature tsd-kind-icon">coordinates<span class="tsd-signature-symbol">:</span> <a href="_grid_grid_coordinates_.gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a></div>
+					<a name="y" class="tsd-anchor"></a>
+					<h3>y</h3>
+					<div class="tsd-signature tsd-kind-icon">y<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">number</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/8afee58/src/app/grid/grid-tile.ts#L6">grid/grid-tile.ts:6</a></li>
+							<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/grid/grid-coordinates.ts#L2">grid/grid-coordinates.ts:2</a></li>
 						</ul>
 					</aside>
+				</section>
+			</section>
+			<section class="tsd-panel-group tsd-member-group ">
+				<h2>Methods</h2>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="add" class="tsd-anchor"></a>
+					<h3>Add</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Add<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/grid/grid-coordinates.ts#L4">grid/grid-coordinates.ts:4</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="equals" class="tsd-anchor"></a>
+					<h3>Equals</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">Equals<span class="tsd-signature-symbol">(</span>other<span class="tsd-signature-symbol">: </span><a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/3153c0a/src/app/grid/grid-coordinates.ts#L3">grid/grid-coordinates.ts:3</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>other: <a href="gridcoordinates.html" class="tsd-signature-type">GridCoordinates</a></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
 				</section>
 			</section>
 		</div>
@@ -156,79 +209,79 @@
 					<li class="globals  ">
 						<a href="../globals.html"><em>Globals</em></a>
 					</li>
-					<li class="label tsd-is-external">
-						<span>Internals</span>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_app_.html">"app"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_bootstrap_.html">"bootstrap"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_emitters_.html">"emitters"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_entity_type_enum_.html">"entity/entity-<wbr>type.enum"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_entity_interface_.html">"entity/entity.interface"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_food_.html">"entity/food"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_player_.html">"entity/player"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_entity_segment_.html">"entity/segment"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_grid_grid_.html">"grid/grid"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_grid_grid_coordinates_.html">"grid/grid-<wbr>coordinates"</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_grid_grid_tile_.html">"grid/grid-<wbr>tile"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_input_service_.html">"input.service"</a>
-					</li>
-					<li class=" tsd-kind-external-module">
-						<a href="../modules/_window_.html">"window"</a>
-					</li>
-					<li class="label tsd-is-external">
-						<span>Externals</span>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/_entity_index_.html">"entity/index"</a>
-					</li>
-					<li class=" tsd-kind-external-module tsd-is-external">
-						<a href="../modules/_grid_index_.html">"grid/index"</a>
-					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
+					<li class=" tsd-kind-enum">
+						<a href="../enums/entitytype.html" class="tsd-kind-icon">Entity<wbr>Type</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="app.html" class="tsd-kind-icon">App</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="emitter.html" class="tsd-kind-icon">Emitter</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="food.html" class="tsd-kind-icon">Food</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="grid.html" class="tsd-kind-icon">Grid</a>
+					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-class tsd-parent-kind-external-module">
-						<a href="_grid_grid_tile_.gridtile.html" class="tsd-kind-icon">Grid<wbr>Tile</a>
+					<li class="current tsd-kind-class">
+						<a href="gridcoordinates.html" class="tsd-kind-icon">Grid<wbr>Coordinates</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="_grid_grid_tile_.gridtile.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="gridcoordinates.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_grid_grid_tile_.gridtile.html#content" class="tsd-kind-icon">content</a>
+								<a href="gridcoordinates.html#x" class="tsd-kind-icon">x</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="_grid_grid_tile_.gridtile.html#coordinates" class="tsd-kind-icon">coordinates</a>
+								<a href="gridcoordinates.html#y" class="tsd-kind-icon">y</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="gridcoordinates.html#add" class="tsd-kind-icon">Add</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="gridcoordinates.html#equals" class="tsd-kind-icon">Equals</a>
 							</li>
 						</ul>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-class">
+						<a href="gridtile.html" class="tsd-kind-icon">Grid<wbr>Tile</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="inputservice.html" class="tsd-kind-icon">Input<wbr>Service</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="player.html" class="tsd-kind-icon">Player</a>
+					</li>
+					<li class=" tsd-kind-class">
+						<a href="segment.html" class="tsd-kind-icon">Segment</a>
+					</li>
+					<li class=" tsd-kind-class tsd-has-type-parameter">
+						<a href="typedemitter.html" class="tsd-kind-icon">Typed<wbr>Emitter</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/disposable.html" class="tsd-kind-icon">Disposable</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/entity.html" class="tsd-kind-icon">Entity</a>
+					</li>
+					<li class=" tsd-kind-interface">
+						<a href="../interfaces/listener.html" class="tsd-kind-icon">Listener</a>
+					</li>
+					<li class=" tsd-kind-interface tsd-has-type-parameter">
+						<a href="../interfaces/typedlistener.html" class="tsd-kind-icon">Typed<wbr>Listener</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="../globals.html#nativewindow" class="tsd-kind-icon">native<wbr>Window</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
