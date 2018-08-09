@@ -1,6 +1,0 @@
-theme: jekyll-theme-cayman
-title: [Snek-TS]
-description: [The classic Snake game. Built using Typescript and HTML5 Canvas]
-include:
-  - "_*_.html"
-  - "_*_.*.html"
