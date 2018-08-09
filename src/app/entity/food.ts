@@ -5,7 +5,7 @@ import { EntityType } from './entity-type.enum';
 
 export class Food implements Entity {
   public type: EntityType = EntityType.Food;
-  public color: string = "#999999";
+  public color: string = "#DDDDDD";
 
   constructor(public coordinates: GridCoordinates = new GridCoordinates()) { }
 }

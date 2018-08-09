@@ -5,7 +5,7 @@ import { EntityType } from './entity-type.enum';
 
 export class Player implements Entity {
   public type: EntityType = EntityType.Player;
-  public color: string = "#333333";
+  public color: string = "#AAAAAA";
 
   public segmentCoordinates: Array<GridCoordinates>;
 

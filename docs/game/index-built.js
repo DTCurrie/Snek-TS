@@ -2211,7 +2211,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 function Grid(canvas, ctx) {
                     var width = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 10;
                     var height = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 10;
-                    var tileSize = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 13;
+                    var tileSize = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : 12;
 
                     _classCallCheck(this, Grid);
 
@@ -2334,7 +2334,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                 this.coordinates = coordinates;
                 this.type = entity_type_enum_1.EntityType.Food;
-                this.color = "#999999";
+                this.color = "#DDDDDD";
             };
 
             exports.Food = Food;
@@ -2352,7 +2352,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                     this.coordinates = coordinates;
                     this.type = entity_type_enum_2.EntityType.Player;
-                    this.color = "#333333";
+                    this.color = "#AAAAAA";
                     this.segmentCoordinates = new Array();
                 }
 
@@ -2380,7 +2380,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
                 this.coordinates = coordinates;
                 this.type = entity_type_enum_3.EntityType.Segment;
-                this.color = "#666666";
+                this.color = "#BBBBBB";
             };
 
             exports.Segment = Segment;

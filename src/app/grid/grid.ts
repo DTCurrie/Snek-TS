@@ -11,7 +11,7 @@ export class Grid {
     private ctx: CanvasRenderingContext2D,
     public width: number = 10,
     public height: number = 10,
-    public tileSize: number = 13) {
+    public tileSize: number = 12) {
     this.tiles = new Array<GridTile>();
     for (let x = 0; x < this.width; x++) {
       for (let y = 0; y < this.height; y++) {

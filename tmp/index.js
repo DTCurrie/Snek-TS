@@ -26,7 +26,7 @@ define("grid/grid", ["require", "exports", "entity/index", "grid/grid-coordinate
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     class Grid {
-        constructor(canvas, ctx, width = 10, height = 10, tileSize = 13) {
+        constructor(canvas, ctx, width = 10, height = 10, tileSize = 12) {
             this.canvas = canvas;
             this.ctx = ctx;
             this.width = width;
@@ -113,7 +113,7 @@ define("entity/food", ["require", "exports", "grid/index", "entity/entity-type.e
         constructor(coordinates = new grid_2.GridCoordinates()) {
             this.coordinates = coordinates;
             this.type = entity_type_enum_1.EntityType.Food;
-            this.color = "#999999";
+            this.color = "#DDDDDD";
         }
     }
     exports.Food = Food;
@@ -125,7 +125,7 @@ define("entity/player", ["require", "exports", "grid/index", "entity/entity-type
         constructor(coordinates = new grid_3.GridCoordinates()) {
             this.coordinates = coordinates;
             this.type = entity_type_enum_2.EntityType.Player;
-            this.color = "#333333";
+            this.color = "#AAAAAA";
             this.segmentCoordinates = new Array();
         }
         addSegment(coordinates) {
@@ -141,7 +141,7 @@ define("entity/segment", ["require", "exports", "grid/index", "entity/entity-typ
         constructor(coordinates = new grid_4.GridCoordinates()) {
             this.coordinates = coordinates;
             this.type = entity_type_enum_3.EntityType.Segment;
-            this.color = "#666666";
+            this.color = "#BBBBBB";
         }
     }
     exports.Segment = Segment;
