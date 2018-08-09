@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "system",
+    "moduleResolution": "node",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "baseUrl": "src/app",
+    "paths": { "*": ["*", "node_modules/"] },
+    "outFile": "dist/app.js"
+  },
+  "include": [ "src/app/**/*" ],
+  "exclude": [ "node_modules" ]
+}
