@@ -4,11 +4,11 @@
     "module": "system",
     "moduleResolution": "node",
     "noImplicitAny": true,
-    "sourceMap": true,
+    "sourceMap": false,
     "experimentalDecorators": true,
     "baseUrl": "src/app",
     "paths": { "*": ["*", "node_modules/"] },
-    "outFile": "dist/app.js"
+    "outFile": "dist/index.js"
   },
   "include": [ "src/app/**/*" ],
   "exclude": [ "node_modules" ]

@@ -1,17 +1,16 @@
 {
   "name": "snek-ts",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.js",
+  "description": "The classic Snake game. Built using Typescript and HTML5 Canvas.",
   "scripts": {
-    "build": "npm run ts && npm run js && npm run babel && npm run sass && npm run css && npm run html && npm run image",
+    "build": "npm run ts && npm run js && npm run sass && npm run css && npm run html && npm run image",
     "start": "npm run sass && concurrently -k -p \"[{name}]\" -n \"SERVER,TS,JS,SASS,HTML,IMG\" -c \"black.bold,blue.bold,green.bold,red.bold,yellow.bold,cyan.bold\" \"http-server ./dist\" \"npm run ts:watch\" \"npm run js:watch\" \"npm run sass:watch\" \"npm run html:watch\" \"npm run image:watch\"",
-    "docs": "npm run build && typedoc --out docs/ --mode file --module system --target es6 --exclude \"src/**/*/index.ts\" --readme ./README.md src/ && cp ./.nojekyll docs/ && cp -r dist/ docs/game",
+    "docs": "npm run build && typedoc --out docs/ --mode file --module system --target es6 --exclude src/**/*+index.ts --readme ./README.md src/ && cp ./.nojekyll docs/ && cp -r dist/ docs/game",
     "ts": "tsc",
     "ts:watch": "npm-watch ts",
-    "js": "browserify src/index.js -o dist/index.js && npm run babel",
+    "js": "browserify src/bundle.js -o tmp/bundle.js && babel tmp/bundle.js --out-file dist/bundle.js",
     "js:watch": "npm-watch js",
-    "babel": "babel dist --out-dir dist",
+    "babel": "",
     "sass": "node-sass -r -o dist --include-path node_modules src/styles && npm run css",
     "sass:watch": "npm-watch sass",
     "css": "postcss dist/styles.css -u autoprefixer -r",
@@ -23,8 +22,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "babel-core": "^6.26.3",
     "babel-polyfill": "^6.26.0",
-    "systemjs": "^0.21.4"
+    "systemjs": "^0.21.4",
+    "systemjs-builder": "^0.16.13"
   },
   "devDependencies": {
     "autoprefixer": "^9.1.0",

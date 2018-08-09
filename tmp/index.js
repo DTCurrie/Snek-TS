@@ -445,6 +445,7 @@ System.register("app", ["entity/index", "emitters", "grid/index", "input.service
                     this.playInstructions = "USE THE ARROW KEYS";
                     this.gameOverInstructions = "PRESS SPACE TO RESTART";
                     this.buttonClick = (button) => this.input.buttonInput(button);
+                    console.log('new');
                     window_1.nativeWindow().App = this;
                     this.initialize();
                     setTimeout(() => document.querySelector('main[role="main"]').classList.remove('hidden'), 0);
