@@ -1,6 +1,9 @@
 @font-face {
-  font-family: "Nokian";
-  src: url("/fonts/Nokian.ttf") format("ttf");
+  font-family: 'Nokian';
+  src: url("/fonts/nokian.eot");
+  src: url("/fonts/nokian.eot?#iefix") format('embedded-opentype'), url("/fonts/nokian.woff2") format('woff2'), url("/fonts/nokian.woff") format('woff'), url("/fonts/nokian.ttf") format('truetype'), url("/fonts/nokian.svg#nokianregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 body,
