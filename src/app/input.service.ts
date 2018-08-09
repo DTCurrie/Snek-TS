@@ -1,10 +1,10 @@
-import { EventEmitter, TypedEventEmitter } from 'events';
+import { Emitter, TypedEmitter } from 'emitters';
 
 import { GridCoordinates } from 'grid';
 
 export class InputService {
-  public onMove: TypedEventEmitter<GridCoordinates> = new TypedEventEmitter<GridCoordinates>();
-  public onSpace: EventEmitter = new EventEmitter();
+  public onMove: TypedEmitter<GridCoordinates> = new TypedEmitter<GridCoordinates>();
+  public onSpace: Emitter = new Emitter();
 
   constructor() { document.addEventListener('keydown', ($event: KeyboardEvent) => this.keyboardInput($event)); }
 

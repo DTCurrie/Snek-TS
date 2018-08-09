@@ -3,7 +3,7 @@ export interface TypedListener<T> { (event: T): any; }
 
 export interface Disposable { dispose(): void; }
 
-export class EventEmitter {
+export class Emitter {
   public listeners: Listener[] = [];
   public triggers: Listener[] = [];
 
@@ -30,7 +30,7 @@ export class EventEmitter {
   };
 }
 
-export class TypedEventEmitter<T>  {
+export class TypedEmitter<T>  {
   public listeners: TypedListener<T>[] = [];
   public triggers: TypedListener<T>[] = [];
 

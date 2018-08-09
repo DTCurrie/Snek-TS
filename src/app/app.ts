@@ -1,5 +1,5 @@
 import { EntityType, Player, Segment } from 'entity';
-import { EventEmitter } from 'events';
+import { Emitter } from 'emitters';
 import { Grid, GridCoordinates } from 'grid';
 import { InputService } from 'input.service';
 import { nativeWindow } from 'window';
@@ -15,7 +15,7 @@ export class App {
 
   private loop: number;
 
-  private onScore: EventEmitter = new EventEmitter();
+  private onScore: Emitter = new Emitter();
 
   public canvas: HTMLCanvasElement;
   public ctx: CanvasRenderingContext2D;
@@ -35,6 +35,14 @@ export class App {
     setTimeout(() => document.querySelector('main[role="main"]').classList.remove('hidden'), 0);
   }
 
+  private drawText(size: number, text: string, y: number): void {
+    this.ctx.font = `bold ${size}px Nokian`;
+    this.ctx.textAlign = 'center';
+    this.ctx.textBaseline = 'middle';
+    this.ctx.fillStyle = '#000000';
+    this.ctx.fillText(text, this.canvas.width / 2, y, this.canvas.width);
+  }
+
   private startGame(): void {
     this.input.onMove.once((coordinates: GridCoordinates) => {
       this.nextCoordinates = coordinates;
@@ -52,11 +60,7 @@ export class App {
     this.grid.generateFood();
     this.grid.drawGrid();
 
-    this.ctx.font = 'bold 10px Nokian';
-    this.ctx.textAlign = 'center';
-    this.ctx.textBaseline = 'middle';
-    this.ctx.fillStyle = '#000000';
-    this.ctx.fillText(this.playInstructions, this.canvas.width / 2, this.canvas.height / 2 + 25, this.canvas.width);
+    this.drawText(10, this.playInstructions, this.canvas.height / 2 + 25);
   }
 
   private newGame(): void {
@@ -69,11 +73,7 @@ export class App {
 
     this.input.onSpace.once(() => this.startGame());
     this.grid.drawGrid();
-    this.ctx.font = 'bold 10px Nokian';
-    this.ctx.textAlign = 'center';
-    this.ctx.textBaseline = 'middle';
-    this.ctx.fillStyle = '#000000';
-    this.ctx.fillText(this.startInstructions, this.canvas.width / 2, this.canvas.height / 2, this.canvas.width);
+    this.drawText(10, this.startInstructions, this.canvas.height / 2);
   }
 
   private initialize(): void {
@@ -124,16 +124,8 @@ export class App {
   }
 
   private gameOver(): void {
-    this.ctx.font = 'bold 20px Nokian';
-    this.ctx.textAlign = 'center';
-    this.ctx.textBaseline = 'middle';
-    this.ctx.strokeStyle = '#000000';
-    this.ctx.fillStyle = '#ffffff';
-    this.ctx.strokeText('GAME OVER', this.canvas.width / 2, this.canvas.height / 2, this.canvas.width);
-
-    this.ctx.font = 'bold 10px Nokian';
-    this.ctx.fillStyle = '#000000';
-    this.ctx.fillText(this.gameOverInstructions, this.canvas.width / 2, this.canvas.height / 2 + 25, this.canvas.width);
+    this.drawText(20, 'GAME OVER', this.canvas.height / 2);
+    this.drawText(10, this.gameOverInstructions, this.canvas.height / 2 + 25);
 
     clearInterval(this.loop);
 
@@ -142,7 +134,7 @@ export class App {
   }
 
   private startGameLoop(): void {
-    this.loop = setInterval(() => {
+    this.loop = nativeWindow().setInterval(() => {
       this.moveCoordinates = this.checkMovement();
       const coordinates = this.player.coordinates.Add(this.moveCoordinates);
       const collision = this.calculateCollision(coordinates);

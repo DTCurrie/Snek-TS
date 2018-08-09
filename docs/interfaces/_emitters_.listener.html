@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>TypedListener | snek-ts</title>
+	<title>Listener | snek-ts</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,54 +56,40 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="../modules/_events_.html">&quot;events&quot;</a>
+					<a href="../modules/_emitters_.html">&quot;emitters&quot;</a>
 				</li>
 				<li>
-					<a href="_events_.typedlistener.html">TypedListener</a>
+					<a href="_emitters_.listener.html">Listener</a>
 				</li>
 			</ul>
-			<h1>Interface TypedListener&lt;T&gt;</h1>
+			<h1>Interface Listener</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
-			<section class="tsd-panel tsd-type-parameters">
-				<h3>Type parameters</h3>
-				<ul class="tsd-type-parameters">
-					<li>
-						<h4>T</h4>
-					</li>
-				</ul>
-			</section>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">TypedListener</span>
+						<span class="target">Listener</span>
 					</li>
 				</ul>
 			</section>
 			<section class="tsd-panel">
 				<h3 class="tsd-before-signature">Callable</h3>
-				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span>event<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+				<ul class="tsd-signatures tsd-kind-interface tsd-parent-kind-external-module">
+					<li class="tsd-signature tsd-kind-icon">__call<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 				</ul>
 				<ul class="tsd-descriptions">
 					<li class="tsd-description">
 						<aside class="tsd-sources">
 							<ul>
-								<li>Defined in <a href="https://github.com/DTCurrie/Snek-TS/blob/8e8a6cf/src/app/events.ts#L2">events.ts:2</a></li>
+								<li>Defined in emitters.ts:1</li>
 							</ul>
 						</aside>
-						<h4 class="tsd-parameters-title">Parameters</h4>
-						<ul class="tsd-parameters">
-							<li>
-								<h5>event: <span class="tsd-signature-type">T</span></h5>
-							</li>
-						</ul>
-						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+						<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
 					</li>
 				</ul>
 			</section>
@@ -119,6 +105,9 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_bootstrap_.html">"bootstrap"</a>
+					</li>
+					<li class="current tsd-kind-external-module">
+						<a href="../modules/_emitters_.html">"emitters"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_entity_entity_type_enum_.html">"entity/entity-<wbr>type.enum"</a>
@@ -137,9 +126,6 @@
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_entity_segment_.html">"entity/segment"</a>
-					</li>
-					<li class="current tsd-kind-external-module">
-						<a href="../modules/_events_.html">"events"</a>
 					</li>
 					<li class=" tsd-kind-external-module">
 						<a href="../modules/_grid_grid_.html">"grid/grid"</a>
@@ -164,24 +150,24 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-external-module">
-						<a href="../classes/_events_.eventemitter.html" class="tsd-kind-icon">Event<wbr>Emitter</a>
+						<a href="../classes/_emitters_.emitter.html" class="tsd-kind-icon">Emitter</a>
 					</li>
 					<li class=" tsd-kind-class tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="../classes/_events_.typedeventemitter.html" class="tsd-kind-icon">Typed<wbr>Event<wbr>Emitter</a>
+						<a href="../classes/_emitters_.typedemitter.html" class="tsd-kind-icon">Typed<wbr>Emitter</a>
 					</li>
 					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_events_.disposable.html" class="tsd-kind-icon">Disposable</a>
-					</li>
-					<li class=" tsd-kind-interface tsd-parent-kind-external-module">
-						<a href="_events_.listener.html" class="tsd-kind-icon">Listener</a>
+						<a href="_emitters_.disposable.html" class="tsd-kind-icon">Disposable</a>
 					</li>
 				</ul>
 				<ul class="current">
-					<li class="current tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
-						<a href="_events_.typedlistener.html" class="tsd-kind-icon">Typed<wbr>Listener</a>
+					<li class="current tsd-kind-interface tsd-parent-kind-external-module">
+						<a href="_emitters_.listener.html" class="tsd-kind-icon">Listener</a>
 					</li>
 				</ul>
 				<ul class="after-current">
+					<li class=" tsd-kind-interface tsd-parent-kind-external-module tsd-has-type-parameter">
+						<a href="_emitters_.typedlistener.html" class="tsd-kind-icon">Typed<wbr>Listener</a>
+					</li>
 				</ul>
 			</nav>
 		</div>
