@@ -36,7 +36,7 @@ export class App {
   }
 
   private drawText(size: number, text: string, y: number): void {
-    this.ctx.font = `bold ${size}px Nokian`;
+    this.ctx.font = `bold ${size}px nokianregular`;
     this.ctx.textAlign = 'center';
     this.ctx.textBaseline = 'middle';
     this.ctx.fillStyle = '#000000';

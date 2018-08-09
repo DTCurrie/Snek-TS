@@ -2593,7 +2593,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                 _createClass(App, [{
                     key: "drawText",
                     value: function drawText(size, text, y) {
-                        this.ctx.font = "bold " + size + "px Nokian";
+                        this.ctx.font = "bold " + size + "px nokianregular";
                         this.ctx.textAlign = 'center';
                         this.ctx.textBaseline = 'middle';
                         this.ctx.fillStyle = '#000000';
