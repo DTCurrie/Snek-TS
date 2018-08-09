@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "system",
+    "module": "amd",
     "moduleResolution": "node",
     "noImplicitAny": true,
     "sourceMap": false,
     "experimentalDecorators": true,
     "baseUrl": "src/app",
     "paths": { "*": ["*", "node_modules/"] },
-    "outFile": "dist/index.js"
+    "outFile": "tmp/index.js"
   },
   "include": [ "src/app/**/*" ],
   "exclude": [ "node_modules" ]

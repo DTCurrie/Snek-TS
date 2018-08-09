@@ -1,4 +1,5 @@
 import { App } from 'app';
 
-/** Create a new instance of the app to bootstrap the site */
-new App();
+declare function require(moduleNames: string[], onLoad: (...args: any[]) => void): void;
+function bootstrapApp(): void { new App(); }
+require(["./app"], (app: typeof App) => bootstrapApp());
