@@ -5,7 +5,7 @@
   "scripts": {
     "build": "npm run ts && npm run js && npm run sass && npm run static && npm run image",
     "start": "npm run sass && concurrently -k -p \"[{name}]\" -n \"SERVER,TS,JS,SASS,STATIC,IMG\" -c \"black.bold,blue.bold,green.bold,red.bold,yellow.bold,cyan.bold\" \"http-server ./dist\" \"npm run ts:watch\" \"npm run js:watch\" \"npm run sass:watch\" \"npm run static:watch\" \"npm run image:watch\"",
-    "docs": "npm run build && typedoc --out docs/ --mode file --module system --target es6 --exclude \"src/**/*/index.ts\" --readme ./README.md src/ && cp ./.nojekyll docs/ && cp -r dist/ docs/game && mv docs/game/fonts docs/",
+    "docs": "npm run build && typedoc --out docs/ --mode file --module system --target es6 --exclude \"src/**/*/index.ts\" --readme ./README.md src/ && cp ./.nojekyll docs/ && cp -r dist/ docs/game",
     "ts": "tsc && node scripts/build-app.js && browserify tmp/index-built.js -o tmp/index-built.js && babel tmp/index-built.js --out-file dist/index-built.js",
     "ts:watch": "npm-watch ts",
     "js": "browserify src/js/bundle.js -o tmp/bundle.js && babel tmp/bundle.js --out-file dist/bundle.js",
